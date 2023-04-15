@@ -1,4 +1,4 @@
-package com.example.movieapp_tmdb.data
+package com.example.movieapp_tmdb.data.db
 
 import androidx.room.Dao
 import androidx.room.Insert

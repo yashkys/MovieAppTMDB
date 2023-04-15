@@ -1,10 +1,7 @@
-package com.example.movieapp_tmdb.data.model
+package com.example.movieapp_tmdb.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.movieapp_tmdb.data.ArtistDao
-import com.example.movieapp_tmdb.data.MovieDao
-import com.example.movieapp_tmdb.data.TvShowDao
 import com.example.movieapp_tmdb.data.model.artist.Artist
 import com.example.movieapp_tmdb.data.model.movie.Movie
 import com.example.movieapp_tmdb.data.model.tvShow.TVShow
