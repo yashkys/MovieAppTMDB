@@ -1,15 +1,18 @@
-package com.example.movieapp_tmdb.data
+package com.example.movieapp_tmdb.data.model.movie
 
 
+import com.example.movieapp_tmdb.data.model.movie.Movie
 import com.google.gson.annotations.SerializedName
 
-data class TVShowList(
+data class MovieList(
     @SerializedName("results")
-    val TVShows: List<TVShow>
+    val movies: List<Movie>
+)
+
+
 //    @SerializedName("page")
 //    val page: Int,
 //    @SerializedName("total_pages")
 //    val totalPages: Int,
 //    @SerializedName("total_results")
 //    val totalResults: Int
-)

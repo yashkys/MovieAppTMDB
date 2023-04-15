@@ -1,6 +1,7 @@
-package com.example.movieapp_tmdb.data
+package com.example.movieapp_tmdb.data.model.artist
 
 
+import com.example.movieapp_tmdb.data.model.artist.Artist
 import com.google.gson.annotations.SerializedName
 
 data class ArtistList(
