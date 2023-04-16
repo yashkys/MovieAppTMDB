@@ -1,4 +1,4 @@
-package com.example.movieapp_tmdb.domain
+package com.example.movieapp_tmdb.domain.repository
 
 import com.example.movieapp_tmdb.data.model.artist.Artist
 
