@@ -10,15 +10,12 @@ class TvShowViewModel(
     private val updateTvShowsUseCase: UpdateTvShowsUseCase
 ): ViewModel() {
 
-    /*
-    invokes the getMoviesUseCase and emit the received list
-     */
-    fun getMovies() = liveData {
+    fun getTvShows() = liveData {
         val tvShowsList = getTvShowsUseCase.execute()
         emit(tvShowsList)
     }
 
-    fun updateMovies() = liveData {
+    fun updateTvShows() = liveData {
         val tvShowsList = updateTvShowsUseCase.execute()
         emit(tvShowsList)
     }
