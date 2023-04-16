@@ -24,11 +24,11 @@ class App: Application(), Injector {
         return appComponent.movieSubComponent().create()
     }
 
-    override fun creteTvShowSubComponent(): TvShowSubComponent {
+    override fun createTvShowSubComponent(): TvShowSubComponent {
         return appComponent.tvShowSubComponent().create()
     }
 
-    override fun creteArtistSubComponent(): ArtistSubComponent {
+    override fun createArtistSubComponent(): ArtistSubComponent {
         return appComponent.artistSubComponent().create()
     }
 }
