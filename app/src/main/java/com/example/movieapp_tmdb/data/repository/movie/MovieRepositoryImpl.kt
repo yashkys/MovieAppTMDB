@@ -16,7 +16,7 @@ class MovieRepositoryImpl(
         return getMoviesFromCache()
     }
 
-    override suspend fun updateMovies(): List<Movie>? {
+    override suspend fun updateMovies(): List<Movie> {
         val newListOfMovies: List<Movie> = getMoviesFromAPI()
         movieLocalDataSource.clearAll()
         movieLocalDataSource.saveMoviesToDB(newListOfMovies)
