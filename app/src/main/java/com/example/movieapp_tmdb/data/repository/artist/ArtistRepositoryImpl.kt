@@ -1,4 +1,4 @@
-package com.example.artistapp_tmdb.data.repository.artist
+package com.example.movieapp_tmdb.data.repository.artist
 
 import android.util.Log
 import com.example.movieapp_tmdb.data.model.artist.Artist

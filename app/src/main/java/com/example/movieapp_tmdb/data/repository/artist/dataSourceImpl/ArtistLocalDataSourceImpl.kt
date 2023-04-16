@@ -1,4 +1,4 @@
-package com.example.artistapp_tmdb.data.repository.artist.dataSourceImpl
+package com.example.movieapp_tmdb.data.repository.artist.dataSourceImpl
 
 import com.example.movieapp_tmdb.data.db.ArtistDao
 import com.example.movieapp_tmdb.data.model.artist.Artist

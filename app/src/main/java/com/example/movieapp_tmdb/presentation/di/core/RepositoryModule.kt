@@ -1,6 +1,6 @@
 package com.example.movieapp_tmdb.presentation.di.core
 
-import com.example.artistapp_tmdb.data.repository.artist.ArtistRepositoryImpl
+import com.example.movieapp_tmdb.data.repository.artist.ArtistRepositoryImpl
 import com.example.movieapp_tmdb.data.repository.artist.dataSource.ArtistCacheDataSource
 import com.example.movieapp_tmdb.data.repository.artist.dataSource.ArtistLocalDataSource
 import com.example.movieapp_tmdb.data.repository.artist.dataSource.ArtistRemoteDataSource
@@ -12,6 +12,9 @@ import com.example.movieapp_tmdb.data.repository.tvShow.TvShowRepositoryImpl
 import com.example.movieapp_tmdb.data.repository.tvShow.dataSource.TvShowCacheDataSource
 import com.example.movieapp_tmdb.data.repository.tvShow.dataSource.TvShowLocalDataSource
 import com.example.movieapp_tmdb.data.repository.tvShow.dataSource.TvShowRemoteDataSource
+import com.example.movieapp_tmdb.domain.repository.ArtistRepository
+import com.example.movieapp_tmdb.domain.repository.MovieRepository
+import com.example.movieapp_tmdb.domain.repository.TvShowRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -25,7 +28,7 @@ class RepositoryModule {
         movieRemoteDataSource: MovieRemoteDataSource,
         movieLocalDataSource: MovieLocalDataSource,
         movieCacheDataSource: MovieCacheDataSource
-    ): MovieRepositoryImpl {
+    ): MovieRepository {
         return MovieRepositoryImpl(
             movieRemoteDataSource,
             movieLocalDataSource,
@@ -39,7 +42,7 @@ class RepositoryModule {
         tvShowRemoteDataSource: TvShowRemoteDataSource,
         tvShowLocalDataSource: TvShowLocalDataSource,
         tvShowCacheDataSource: TvShowCacheDataSource
-    ): TvShowRepositoryImpl {
+    ): TvShowRepository {
         return TvShowRepositoryImpl(
             tvShowRemoteDataSource,
             tvShowLocalDataSource,
@@ -53,7 +56,7 @@ class RepositoryModule {
         artistRemoteDataSource: ArtistRemoteDataSource,
         artistLocalDataSource: ArtistLocalDataSource,
         artistCacheDataSource: ArtistCacheDataSource
-    ): ArtistRepositoryImpl {
+    ): ArtistRepository {
         return ArtistRepositoryImpl(
             artistRemoteDataSource,
             artistLocalDataSource,
